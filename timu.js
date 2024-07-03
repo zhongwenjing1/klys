@@ -58,8 +58,9 @@ for(var i =0; i < ele.length; i ++) {
   //将生成的题目放到元素上
   td.innerText = quiz_list[i];
   // 拿到tr里面的 input
-
-  // 再讲input中的value清除
+  var input = ele[i].querySelector('input');
+  // 再将input中的value清除
+  input.value = '';
 }
 
  // 拿到要隐藏的元素div
